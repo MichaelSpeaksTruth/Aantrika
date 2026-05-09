@@ -24,7 +24,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
-      <body>{children}</body>
+      <body className="flex min-h-screen flex-col">
+        <div className="flex-1">{children}</div>
+        <footer className="border-t border-soil/10 py-8 text-center text-sm text-soil/60">
+          <p>© 2025–2026 Aantrika. Designed & Developed with purpose and care. All Rights Reserved. ®</p>
+        </footer>
+      </body>
     </html>
   );
 }
