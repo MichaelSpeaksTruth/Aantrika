@@ -38,7 +38,7 @@ export function ProductGallery() {
           {galleryImages.map((image, index) => (
             <div
               key={index}
-              className="group min-w-0 overflow-hidden rounded-[32px] border border-soil/10 bg-white/95 shadow-paper shadow-soil/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_25px_75px_-35px_rgba(45,55,72,0.35)]"
+              className="group min-w-0 overflow-hidden rounded-[32px] border border-soil/10 bg-white/95 shadow-paper shadow-soil/10 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-soft"
             >
               <div className="relative h-72 w-full sm:h-80">
                 <Image

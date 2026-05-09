@@ -33,11 +33,11 @@ export function FeatureGrid() {
           transition={{ duration: 0.7, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="surface-card min-w-0 border border-soil/10 bg-white/95 p-8 shadow-paper shadow-soil/10"
         >
-          <div className="mb-4 inline-flex rounded-full border border-terracotta/18 bg-terracotta/10 px-4 py-2 text-xs uppercase tracking-[0.24em] text-soil/80">
+          <div className="mb-4 inline-flex rounded-full border border-rose/20 bg-petal/70 px-4 py-2 text-xs uppercase tracking-[0.18em] text-soil/70">
             {`Feature ${index + 1}`}
           </div>
-          <h3 className="break-words font-sans text-2xl leading-tight text-ink">{feature.title}</h3>
-          <p className="mt-4 break-words text-base leading-7 text-soil/85">{feature.description}</p>
+          <h3 className="break-words font-sans text-2xl font-semibold leading-tight text-ink tracking-[-0.02em]">{feature.title}</h3>
+          <p className="mt-4 break-words text-sm leading-7 text-soil/80">{feature.description}</p>
         </motion.article>
       ))}
     </div>

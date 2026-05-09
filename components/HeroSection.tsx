@@ -24,17 +24,17 @@ export function HeroSection() {
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
           className="min-w-0 flex-1"
         >
-          <div className="mb-8 max-w-xl rounded-[32px] border border-soil/10 bg-sand/80 px-6 py-4 text-xs uppercase tracking-[0.3em] text-soil/70 shadow-paper shadow-soil/8 sm:px-8">
+          <div className="mb-8 max-w-xl rounded-[32px] border border-soil/10 bg-sand/80 px-6 py-4 text-xs uppercase tracking-[0.18em] text-soil/70 shadow-paper shadow-soil/8 sm:px-8">
             Editorial eco-luxury for menstrual wellness
           </div>
           <div className="max-w-2xl">
-            <p className="mb-6 inline-flex border-l-4 border-terracotta pl-5 text-sm uppercase tracking-[0.3em] text-soil/80">
-              Sustainable Comfort for Every Cycle
+            <p className="mb-6 inline-flex border-l-4 border-rose pl-5 text-sm uppercase tracking-[0.18em] text-soil/80">
+              Sustainable comfort for every cycle
             </p>
-            <h1 className="break-words font-sans text-[3rem] leading-[0.98] text-ink sm:text-6xl lg:text-7xl">
+            <h1 className="break-words font-sans text-[3rem] leading-[0.95] text-ink sm:text-6xl lg:text-7xl tracking-[-0.04em]">
               A premium movement for menstrual care that feels like a second skin.
             </h1>
-            <p className="mt-8 max-w-2xl break-words text-base leading-8 text-soil/85 sm:text-lg">
+            <p className="mt-8 max-w-2xl break-words text-base leading-7 text-soil/82 sm:text-lg tracking-[-0.01em]">
               Aantrika brings eco-friendly, biodegradable, and reusable menstrual pads that care for you and the planet with soft material, thoughtful design, and modern feminine strength.
             </p>
           </div>
