@@ -14,8 +14,8 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden px-6 py-20 sm:px-10 lg:px-14">
       <div className="pointer-events-none absolute inset-0 blur-3xl">
-        <div className="absolute left-[-10%] top-10 h-56 w-56 rounded-full bg-moss/15" />
-        <div className="absolute right-0 top-24 h-48 w-48 rounded-full bg-terracotta/12" />
+        <div className="absolute left-[-10%] top-10 h-56 w-56 rounded-full bg-rose/15" />
+        <div className="absolute right-0 top-24 h-48 w-48 rounded-full bg-blush/20" />
       </div>
       <div className="relative mx-auto flex max-w-7xl flex-col gap-12 lg:flex-row lg:items-center">
         <motion.div
@@ -24,7 +24,7 @@ export function HeroSection() {
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
           className="min-w-0 flex-1"
         >
-          <div className="mb-8 max-w-xl rounded-[32px] border border-soil/10 bg-sand/80 px-6 py-4 text-xs uppercase tracking-[0.18em] text-soil/70 shadow-paper shadow-soil/8 sm:px-8">
+          <div className="mb-8 max-w-xl rounded-[32px] border border-soil/10 bg-petal/80 px-6 py-4 text-xs uppercase tracking-[0.18em] text-soil/70 shadow-paper shadow-soil/8 sm:px-8">
             Editorial eco-luxury for menstrual wellness
           </div>
           <div className="max-w-2xl">
@@ -55,20 +55,20 @@ export function HeroSection() {
           transition={{ duration: 0.85, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="relative flex-1"
         >
-          <div className="relative mx-auto max-w-xl rounded-[42px] border border-soil/10 bg-cotton/95 p-8 shadow-soft">
-            <div className="absolute -left-10 top-10 h-32 w-32 rounded-full bg-moss/15 blur-2xl" />
+          <div className="relative mx-auto max-w-xl rounded-[42px] border border-soil/10 bg-petal/90 p-8 shadow-soft">
+            <div className="absolute -left-10 top-10 h-32 w-32 rounded-full bg-rose/15 blur-2xl" />
             <div className="absolute right-8 top-24 h-24 w-24 rounded-full bg-dustyRose/20 blur-2xl" />
             <div className="surface-card relative overflow-hidden rounded-[34px] border border-soil/10 bg-white p-8 shadow-paper shadow-soil/10">
               <div className="space-y-6">
-                <div className="h-3 w-28 rounded-full bg-sand/90" />
-                <div className="h-4 w-20 rounded-full bg-sage/80" />
+                <div className="h-3 w-28 rounded-full bg-blush/90" />
+                <div className="h-4 w-20 rounded-full bg-rose/40" />
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-[30px] bg-moss/95 p-6 text-white shadow-paper shadow-moss/20">
-                    <p className="text-sm uppercase tracking-[0.24em] text-sand/90">Hybrid composition</p>
+                  <div className="rounded-[30px] bg-rose/90 p-6 text-ink shadow-paper shadow-rose/20">
+                    <p className="text-sm uppercase tracking-[0.24em] text-soil/70">Hybrid composition</p>
                     <p className="mt-4 text-lg font-semibold">Reusable + Biodegradable</p>
                   </div>
-                  <div className="rounded-[30px] bg-terracotta/95 p-6 text-white shadow-paper shadow-[0_24px_60px_rgba(201,124,93,0.18)]">
-                    <p className="text-sm uppercase tracking-[0.24em] text-sand/90">Care-first design</p>
+                  <div className="rounded-[30px] bg-blush p-6 text-ink shadow-paper shadow-soil/10">
+                    <p className="text-sm uppercase tracking-[0.24em] text-soil/60">Care-first design</p>
                     <p className="mt-4 text-lg font-semibold">Comfort that honors every curve</p>
                   </div>
                 </div>

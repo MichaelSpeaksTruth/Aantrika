@@ -14,7 +14,7 @@ const values = [
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden bg-cotton text-soil">
+    <main className="relative overflow-hidden bg-petal text-soil">
       <HeroSection />
 
       <CampaignPopup />
@@ -50,7 +50,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-[36px] border border-soil/10 bg-rose/10 p-9 shadow-paper shadow-soil/10">
+          <div className="relative overflow-hidden rounded-[36px] border border-soil/10 bg-blush/30 p-9 shadow-paper shadow-soil/10">
             <div className="absolute right-6 top-6 h-24 w-24 rounded-full bg-petal/70 blur-2xl" />
             <div className="space-y-6">
               <div className="inline-flex items-center gap-3 rounded-full border border-soil/12 bg-white/90 px-5 py-3 text-sm uppercase tracking-[0.18em] text-soil/80">
@@ -87,12 +87,12 @@ export default function Home() {
                   <h3 className="break-words text-lg font-semibold text-ink">Material breakdown</h3>
                   <p className="mt-3 break-words text-sm leading-7 text-soil/82">The soft reusable inner layer cushions, absorbs, and keeps the experience temperature balanced.</p>
                 </div>
-                <div className="min-w-0 rounded-[28px] bg-rose/10 p-6">
+                <div className="min-w-0 rounded-[28px] bg-blush p-6">
                   <h3 className="break-words text-lg font-semibold text-ink tracking-[-0.02em]">Design details</h3>
                   <p className="mt-3 break-words text-sm leading-7 text-soil/82">Curved wings, precision quilting, and discreet fasteners that move with your body.</p>
                 </div>
               </div>
-              <div className="min-w-0 rounded-[32px] border border-soil/10 bg-cotton/95 p-6">
+              <div className="min-w-0 rounded-[32px] border border-soil/10 bg-petal/60 p-6">
                 <p className="text-sm uppercase tracking-[0.18em] text-soil/70">Pricing callout</p>
                 <p className="mt-4 break-words text-2xl font-semibold text-ink tracking-[-0.02em]">A premium kit starting with mindful affordability.</p>
                 <p className="mt-3 break-words max-w-xl text-sm leading-7 text-soil/82">A sustainable set that pays back in value over time, with reusable pads crafted to last across cycles and reduce waste.</p>
@@ -101,10 +101,10 @@ export default function Home() {
           </div>
           <div className="space-y-7">
             <FeatureGrid />
-            <div className="rounded-[36px] border border-soil/10 bg-moss/95 p-8 text-white shadow-paper shadow-moss/15">
-              <p className="text-sm uppercase tracking-[0.18em] text-sand/80">Interactive essence</p>
+            <div className="rounded-[36px] border border-soil/10 bg-rose/90 p-8 text-ink shadow-paper shadow-rose/20">
+              <p className="text-sm uppercase tracking-[0.18em] text-soil/70">Interactive essence</p>
               <h3 className="mt-4 text-3xl font-semibold tracking-[-0.03em]">Tactile care, reimagined.</h3>
-              <p className="mt-5 text-sm leading-7 text-sand/90">Experience a pad that feels soft at the surface, strong in performance, and invisible in daily rituals.</p>
+              <p className="mt-5 text-sm leading-7 text-soil/85">Experience a pad that feels soft at the surface, strong in performance, and invisible in daily rituals.</p>
             </div>
           </div>
         </div>
@@ -123,16 +123,16 @@ export default function Home() {
             />
             <div className="mt-8 grid gap-5 sm:grid-cols-2">
               <div className="rounded-[30px] bg-white/95 p-6 shadow-paper shadow-soil/8">
-                <p className="text-5xl font-semibold text-moss">80%</p>
+                <p className="text-5xl font-semibold text-rose">80%</p>
                 <p className="mt-3 text-sm uppercase tracking-[0.24em] text-soil/70">Less waste per year</p>
               </div>
               <div className="rounded-[30px] bg-white/95 p-6 shadow-paper shadow-soil/8">
-                <p className="text-5xl font-semibold text-terracotta">1200+</p>
+                <p className="text-5xl font-semibold text-rose">1200+</p>
                 <p className="mt-3 text-sm uppercase tracking-[0.24em] text-soil/70">Disposable pads replaced</p>
               </div>
             </div>
           </div>
-          <div className="section-panel rounded-[36px] border border-soil/10 bg-sand/90 p-10 shadow-paper shadow-soil/10">
+          <div className="section-panel rounded-[36px] border border-soil/10 bg-blush/80 p-10 shadow-paper shadow-soil/10">
             <div className="inline-flex rounded-full border border-soil/15 bg-white/75 px-4 py-2 text-xs uppercase tracking-[0.28em] text-soil/70">
               Organic metaphors
             </div>
@@ -166,7 +166,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="mt-8 grid gap-4 sm:grid-flow-col sm:auto-cols-max sm:items-center">
-                <div className="rounded-[32px] border border-soil/10 bg-petal/85 px-6 py-4 text-sm font-semibold text-ink shadow-paper shadow-soil/10">
+                <div className="rounded-[32px] border border-soil/10 bg-rose px-6 py-4 text-sm font-semibold text-ink shadow-paper shadow-soil/10">
                   Join the movement
                 </div>
                 <a
@@ -177,8 +177,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="relative rounded-[36px] bg-terracotta/10 p-10 shadow-paper shadow-[0_24px_60px_rgba(201,124,93,0.12)]">
-              <div className="absolute inset-x-0 top-0 h-20 rounded-b-[42px] bg-moss/10" />
+            <div className="relative rounded-[36px] bg-blush/50 p-10 shadow-paper shadow-[0_24px_60px_rgba(201,124,93,0.12)]">
+              <div className="absolute inset-x-0 top-0 h-20 rounded-b-[42px] bg-rose/10" />
               <div className="relative space-y-6">
                 <div className="inline-flex rounded-full bg-white/90 px-4 py-2 text-xs uppercase tracking-[0.28em] text-soil/70">
                   Campus origins
@@ -189,9 +189,9 @@ export default function Home() {
                     Sessions with young women and makers sparked a product philosophy that values ritual, comfort, and education equally.
                   </p>
                 </div>
-                <div className="rounded-[32px] bg-moss/95 p-8 text-white shadow-paper shadow-moss/15">
+                <div className="rounded-[32px] bg-rose/90 p-8 text-ink shadow-paper shadow-rose/20">
                   <p className="font-semibold">Human-centered rhythm</p>
-                  <p className="mt-4 text-base leading-7 text-sage/90">
+                  <p className="mt-4 text-base leading-7 text-soil/85">
                     Every detail is considered from the perspective of lived experience, not just function.
                   </p>
                 </div>
