@@ -24,23 +24,25 @@ export function CampaignPopup() {
     <AnimatePresence>
       {visible && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-end justify-center overflow-hidden bg-[rgba(255,248,246,0.92)] px-4 py-6 backdrop-blur-sm sm:items-center sm:justify-center"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[rgba(255,248,246,0.92)] px-4 py-6 backdrop-blur-sm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+          onClick={() => setVisible(false)}
         >
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(245,222,220,0.24),transparent_18%),radial-gradient(circle_at_bottom_right,rgba(217,154,174,0.14),transparent_20%)]" />
           <motion.div
-            className="relative z-10 w-full max-w-5xl overflow-hidden rounded-[40px] border border-rose/10 bg-[#fff6f4] p-5 shadow-[0_24px_80px_rgba(62,50,44,0.1)] sm:p-8"
+            className="relative z-10 w-full max-w-5xl max-h-[95vh] overflow-y-auto overflow-x-hidden rounded-[32px] sm:rounded-[40px] border border-rose/10 bg-[#fff6f4] p-5 shadow-[0_24px_80px_rgba(62,50,44,0.1)] sm:p-8"
             initial={{ y: 36, opacity: 0, scale: 0.96 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             exit={{ y: 20, opacity: 0, scale: 0.96 }}
             transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setVisible(false)}
-              className="absolute right-5 top-5 inline-flex h-11 w-11 items-center justify-center rounded-full border border-soil/10 bg-white/90 text-soil shadow-paper shadow-soil/10 transition hover:bg-petal/90"
+              className="absolute right-3 top-3 sm:right-5 sm:top-5 z-20 inline-flex h-11 w-11 items-center justify-center rounded-full border border-soil/10 bg-white text-soil shadow-paper shadow-soil/10 transition hover:bg-petal/90"
               aria-label="Close campaign popup"
             >
               ✕
@@ -86,7 +88,7 @@ export function CampaignPopup() {
                 <div className="absolute -left-6 top-8 h-28 w-28 rounded-full bg-rose/15 blur-3xl" />
                 <div className="absolute right-6 bottom-10 h-20 w-20 rounded-full bg-sand/80 blur-3xl" />
                 <div className="overflow-hidden rounded-[34px] border border-soil/10 bg-[#fff5f3] shadow-paper shadow-soil/10">
-                  <div className="relative h-[28rem] overflow-hidden rounded-[30px] bg-[radial-gradient(circle_at_top_left,rgba(246,209,221,0.38),transparent_35%),linear-gradient(180deg,rgba(255,249,247,0.96),rgba(255,245,244,0.96))]">
+                  <div className="relative h-[12rem] sm:h-[28rem] overflow-hidden rounded-[24px] sm:rounded-[30px] bg-[radial-gradient(circle_at_top_left,rgba(246,209,221,0.38),transparent_35%),linear-gradient(180deg,rgba(255,249,247,0.96),rgba(255,245,244,0.96))]">
                     <Image
                       src={campaignImage}
                       alt="Aantrika campaign collage"
